@@ -201,12 +201,12 @@
          line-height: 51px;
        }
        .feynman__link{
-       color: #2f80ed;
+       color:#2f80ed;
        position:absolute;
-       top:50%; right:48px;
+       top:50%;right:48px;
        font-size:36px;
-       font-weight: normal;
-       line-height: 51px;
+       font-weight:normal;
+       line-height:51px;
        text-decoration: none;
        }
   .kaufman{
