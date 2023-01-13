@@ -114,7 +114,7 @@
    line-height: 34px;
    font-size: 24px;
    font-weight: normal;
-   color:black
+   color:black;
  }
 
   span{
@@ -185,7 +185,6 @@
    background-image:url(/images/feynman.png);
    background-position: left bottom;
    position:relative;
-   background-size: contain;
    background-repeat: no-repeat;
    background-size: 867px 637px;
    min-height:890px;
@@ -212,17 +211,16 @@
        color: #2f80ed;
        position:absolute;
        top:50%; right:48px;
-       font-size:  36px;
+       font-size:36px;
        font-weight: normal;
        line-height: 51px;
        text-decoration: none;
        }
   .kaufman{
-    background-color: #1f1f1f;
-    position: relative;
-    overflow: hidden;
-
-      }
+     background-color: #1f1f1f;
+     position: relative;
+     overflow: hidden;
+   }
 
       .section-title_theme_dark{
        color:white;
@@ -260,7 +258,7 @@
         z-index: 1;
       }
 
-      .table__cell_theme_dark {
+      .table__cell_theme_dark{
         margin-top: 80px;
         margin-bottom: 0px;
         width: 200px;
