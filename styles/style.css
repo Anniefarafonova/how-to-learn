@@ -14,6 +14,7 @@
     overflow: hidden;
     align-items: center;
     position: relative;
+    z-index: 1;
   }
 
   .header__square-pic {
@@ -22,14 +23,13 @@
     background-color: #2f80ed;
     position: absolute;
     right: 0;
-    z-index: 1;
+    z-index: -2;
   }
 
   .logo_place_header {
     position: absolute;
     top: 30px;
     left: 64px;
-    z-index: 2;
   }
 
   .logo {
@@ -38,15 +38,14 @@
   }
 
   .header__title {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     max-width: 730px;
     margin-left: 64px;
     color: black;
     font-size: 102px;
     font-weight: 600;
     line-height: 96px;
-    z-index: 2;
   }
 
   .header__subtitle {
@@ -58,9 +57,8 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-    z-index: 2;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .header__link {
@@ -74,7 +72,7 @@
     bottom: 0;
     width: 765px;
     height: 608px;
-    z-index: 2;
+    z-index: -1;
   }
 
   .description {
@@ -97,6 +95,8 @@
     font-weight: normal;
     line-height: 1.2;
     color: #2F80ED;
+    margin: 0;
+    padding: 0;
   }
 
   .two-columns__main-text {
@@ -124,14 +124,18 @@
   }
 
   .digits {
-    position: relative;
-    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+
   }
 
   .section-title {
     margin: 0 auto 20px;
     text-align: center;
-    width: 60%;
+    max-width: 60%;
     color: black;
     font-size: 60px;
     font-weight: 600;
@@ -144,24 +148,25 @@
     font-size: 24px;
     font-weight: normal;
     line-height: 34px;
-    width: 60%;
-    margin: auto;
+    max-width: 60%;
+    margin: 0 auto;
   }
 
   .table {
-    padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     width: 1100px;
+    list-style: none;
   }
 
   .table__cell {
-    max-width: 250px;
-    margin-bottom: 60px;
-    padding: 0px;
+    width: 250px;
+    margin-top: 60px;
   }
+
 
   .table__heading {
     margin: 0;
@@ -184,18 +189,19 @@
 
   .feynman {
     background-color: #f2f2f2;
-    background-image: url(/images/feynman.png);
+    background-image: url(../images/feynman.png);
     background-position: left bottom;
     position: relative;
     background-repeat: no-repeat;
     background-size: 867px 637px;
     min-height: 890px;
     padding-top: 100px;
+    box-sizing: border-box;
 
   }
 
   .feynman__title {
-    margin: 0px auto 70px;
+    margin: 0 auto 70px;
     text-align: center;
     max-width: 648px;
     color: black;
@@ -226,53 +232,33 @@
   }
 
   .kaufman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #1f1f1f;
     position: relative;
     overflow: hidden;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 0;
+    z-index: 1;
   }
 
   .section-title_theme_dark {
     color: white;
-    z-index: 2;
   }
 
   .section-subtitle_theme_dark {
     color: white;
-
-  }
-
-  .table_theme_dark {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: auto;
-    z-index: 1;
   }
 
   .table__cell_theme_dark {
-    margin-top: 80px;
-    margin-bottom: 0px;
     max-width: 200px;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-between;
-    z-index: 1;
-
   }
 
   .table__heading_theme_dark {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.15;
     color: #ffffff;
   }
 
   .table__text_theme_dark {
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.2;
     color: #ffffff;
   }
 
@@ -281,10 +267,10 @@
     background-image: url(../images/kaufman-triangle.svg);
     width: 877px;
     height: 877px;
-    z-index: 0;
+    z-index: -1;
     overflow: hidden;
     right: -210px;
-    top: 0px;
+    top: 0;
     background-size: cover;
   }
 
@@ -302,7 +288,6 @@
   .footer__columns {
     display: flex;
     justify-content: space-between;
-    margin: auto;
     width: 90%;
   }
 
@@ -323,6 +308,7 @@
 
   .footer__column-links {
     margin-bottom: 16px;
+    margin-top: 0;
     padding-left: 0;
     list-style: none;
   }
@@ -350,6 +336,14 @@
     padding-right: 10px;
   }
 
-  a:hover {
-    color: #6d6c6c;
+  .header__link:hover {
+    color: #000000;
+  }
+
+  .feynman__link:hover {
+    color: #575454;
+  }
+
+  .footer__column-link:hover {
+    color: #91e4ed;
   }
