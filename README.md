@@ -11,6 +11,4 @@
 - Фйловая структура Nested БЭМ;
 - Работа с медиафайлами;
 
-## Источники для проектной работы:
-https://code.s3.yandex.net/web-developer/project-1/sprint-2-brief.pdf
-https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf
+
